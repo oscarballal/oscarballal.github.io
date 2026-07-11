@@ -11,6 +11,3 @@ Welcome! I am a PhD student in Mathematics at <a href="https://matematicas.ucm.e
 
 My research interests lie in the areas of Lie theory, differential geometry, and differential equations. Specifically, my ongoing PhD project is about Lie systems on curved spaces with compatible geometric structures. 
 
-### Personal
-
-* **Pronunciation:** <span class="ipa">/ɔskax kaɾbaʎal/</span>
