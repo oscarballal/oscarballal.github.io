@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a PhD student in Mathematics at **[University Name]**, supported by a **[Fellowship/Grant Name]**. I am fortunate to be advised by **[Supervisor Name]**.
+Welcome! I am a PhD student in Mathematics at <a href="https://matematicas.ucm.es" style="color: #2e6c80;">**Universidad Complutense de Madrid**</a>, under the supervision of Prof. Rutwig Campoamor-Stursberg (UCM) and Prof. Francisco José Herranz (UBU). 
 
 My research interests lie in the areas of [Interest 1] and [Interest 2]. Specifically, I am currently exploring [Specific Research Problem or Project Name].
 
