@@ -13,7 +13,7 @@ repository               : "academicpages/academicpages.github.io"
 author:
   avatar           : "perfil.jpg"
   name             : "Oscar Carballal"
-  bio              : "PhD Student in Mathematics at [University Name]."
+  bio              : #"PhD Student in Mathematics at [University Name]."
   location         : #"[City, Country]"
   employer         : #"[University Name]"
   email            : "oscarbal@ucm.es" 
