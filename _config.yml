@@ -14,14 +14,14 @@ author:
   avatar           : "perfil.jpg"
   name             : "Oscar Carballal"
   bio              : "PhD Student in Mathematics at [University Name]."
-  location         : "[City, Country]"
-  employer         : "[University Name]"
+  location         : #"[City, Country]"
+  employer         : #"[University Name]"
   email            : "oscarbal@ucm.es" 
   arxiv            : "http://arxiv.org/a/carballal_o_1"
   googlescholar    : "https://scholar.google.es/citations?user=5zzeOzQAAAAJ&hl=es&authuser=2"
   orcid            : "https://orcid.org/0009-0001-6659-744X"
   researchgate     : "https://www.researchgate.net/profile/Oscar-Carballal?ev=hdr_xprf"
-  github           : "[Your_GitHub_Username]"
+  github           : #"[Your_GitHub_Username]"
 
 # Publication Category
 publication_category:
@@ -41,9 +41,9 @@ talkmap_link             : false
 comments:
   provider               : false
 atom_feed:
-  hide                   : false
+  hide                   : true # Hides the RSS/Atom feed in the footer
 
-# Reading Files (Combined properly to prevent overwriting)
+# Reading Files
 include:
   - .htaccess
   - _pages
@@ -132,23 +132,23 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
   - scope:
       path: ""
       type: publications
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
   - scope:
       path: ""
       type: talks
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
 
 # Sass/SCSS
 sass:
@@ -159,12 +159,11 @@ sass:
 permalink: /:categories/:title/
 timezone: Etc/UTC
 
-# Plugins
+# Plugins (Removed jekyll-sitemap)
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
 
@@ -172,7 +171,6 @@ whitelist:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
 
