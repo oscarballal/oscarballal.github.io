@@ -11,8 +11,8 @@ locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Oscar Carballal"
 title_separator          : "-"
-name                     : &name "Oscar carballal"
-description              : &description "Oscar Carballal's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Oscar Carballal"
+description              : &description "PhD student in Mathematics"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : "https://oscarballalso.xyz" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Oscar Carballal"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "PhD Student in Mathematics at Universidad Complutense de Madrid"
   location         : "Madrid"
   employer         : "Universidad Complutense de Madrid"
   uri              : # URL
