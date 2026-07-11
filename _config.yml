@@ -23,12 +23,12 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "perfil.jpg"
   name             : "Oscar Carballal"
   pronouns         : # example: "she/her"  
   bio              : "PhD Student in Mathematics at Universidad Complutense de Madrid"
   location         : "Madrid"
-  employer         : "Universidad Complutense de Madrid"
+  employer         : "UCM"
   uri              : # URL
   email            : "oscarbal@ucm.es" 
 
