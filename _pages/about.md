@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a PhD student in Mathematics at <a href="https://matematicas.ucm.es" style="color: #2e6c80;">**Universidad Complutense de Madrid**</a>, under the supervision of Prof. Rutwig Campoamor-Stursberg (UCM) and Prof. Francisco José Herranz (UBU). 
+Welcome! I am a PhD student in Mathematics at <a href="https://matematicas.ucm.es" style="color: #9E1B32;"><u>eUniversidad Complutense de Madrid</u></a>, under the supervision of Prof. Rutwig Campoamor-Stursberg (UCM) and Prof. Francisco José Herranz (UBU). 
 
 My research interests lie in the areas of [Interest 1] and [Interest 2]. Specifically, I am currently exploring [Specific Research Problem or Project Name].
 
