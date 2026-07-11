@@ -27,7 +27,7 @@ author:
   name             : "Oscar Carballal"
   pronouns         : # example: "she/her"  
   bio              : #"PhD Student in Mathematics at Universidad Complutense de Madrid"
-  location         : "Office 308-H, Facultad de CC. Matemáticas, UCM"
+  location         : # "Office 308-H, Facultad de CC. Matemáticas, UCM"
   employer         : #"UCM"
   uri              : # URL
   email            : "oscarbal@ucm.es" 
