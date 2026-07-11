@@ -7,20 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a PhD student in Mathematics at <a href="https://matematicas.ucm.es" style="color: #9E1B32;"><u>eUniversidad Complutense de Madrid</u></a>, under the supervision of Prof. Rutwig Campoamor-Stursberg (UCM) and Prof. Francisco José Herranz (UBU). 
+Welcome! I am a PhD student in Mathematics at <a href="https://matematicas.ucm.es" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">Universidad Complutense de Madrid</a>, under the supervision of Prof. <a href="https://www.ucm.es/imi/rutwig-campoamor-stursberg" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">Rutwig Campoamor-Stursberg</a> (UCM) and Prof. <a href="https://investigacion.ubu.es/investigadores/35246/detalle" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">Francisco José Herranz</a> (UBu).
 
-My research interests lie in the areas of [Interest 1] and [Interest 2]. Specifically, I am currently exploring [Specific Research Problem or Project Name].
-
-### Theses
-
-* **M.Sc. in Mathematics**, [University Name], [Year].
-  * *Thesis:* [Master's Thesis Title]
-  * [[PDF]]([link-to-master-pdf]) | [[Slides]]([link-to-master-slides])
-* **B.Sc. in Mathematics**, [University Name], [Year].
-  * *Thesis:* [Bachelor's Thesis Title]
-  * [[PDF]]([link-to-bachelor-pdf]) | [[Slides]]([link-to-bachelor-slides])
+My research interests lie in the areas of Lie theory, differential geometry, and differential equations. Specifically, my ongoing PhD project is about Lie systems in curved spaces with compatible geometric structures. 
 
 ### Personal
 
-* **Pronunciation:** /ɔskax kaɾbaʎal/
-* Outside of mathematics, I enjoy [Hobby 1], [Hobby 2], and [Hobby 3].
+* **Pronunciation:** <span class="ipa">/ɔskax kaɾbaʎal/</span>
+* Outside of mathematics, I enjoy supporting <a href="https://rccelta.es" style="color: blue; text-decoration: underline; border-bottom: none;">Real Club Celta de Vigo</a>.
