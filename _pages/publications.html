@@ -13,9 +13,28 @@ author_profile: true
 
 <hr>
 
-{% include base_path %}
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+<p>You can also find my articles on <a href="[Your_Scholar_ID]" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">my Google Scholar profile</a>.</p>
+
+<hr>
+
+<ul>
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  <li style="margin-bottom: 15px;">
+    {{ post.citation }}
+    <br>
+    <a href="{{ post.paperurl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">[arXiv]</a>
+    {% if post.puburl %}
+      | <a href="{{ post.puburl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">[Journal]</a>
+    {% endif %}
+  </li>
 {% endfor %}
+</ul>
 
 
