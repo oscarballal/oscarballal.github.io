@@ -9,17 +9,16 @@ author_profile: true
 
 <hr>
 
-<ul>
+<ol>
 {% for post in site.publications reversed %}
   <li style="margin-bottom: 15px;">
     {{ post.citation }}
-    <br>
     <a href="{{ post.paperurl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">[arXiv]</a>
     {% if post.puburl %}
       | <a href="{{ post.puburl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">[Journal]</a>
     {% endif %}
   </li>
 {% endfor %}
-</ul>
+</ol>
 
 
