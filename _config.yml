@@ -187,4 +187,4 @@ compress_html:
     envs: development
 
 # Layout Settings
-favicon: /images/favicon.ico
+favicon: /images/logo.png
