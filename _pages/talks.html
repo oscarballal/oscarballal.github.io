@@ -5,15 +5,16 @@ permalink: /talks/
 author_profile: true
 ---
 
-{% assign talks_by_year = site.talks | group_by_exp: "talk", "talk.date | date: '%Y'" %}
+{% assign talks_by_year = site.talks | group_by_exp: "talk", "talk.date | date: '%Y'" | sort: "name" | reverse %}
 
 {% for year in talks_by_year %}
   <details>
-    <summary style="font-size: 1.5em; font-weight: bold; cursor: pointer; margin-bottom: 0.5em; padding: 0.2em;">
+    <summary style="font-size: 1.2em; font-weight: bold; cursor: pointer; margin-bottom: 0.5em; padding: 0.2em;">
       {{ year.name }}
     </summary>
     <ul style="margin-top: 0.5em; margin-bottom: 1.5em;">
-      {% for talk in year.items %}
+      {% assign sorted_talks = year.items | sort: "date" | reverse %}
+      {% for talk in sorted_talks %}
         <li style="margin-bottom: 0.5em;">
           <a href="{{ talk.url | relative_url }}">{{ talk.title }}</a> - <i>{{ talk.venue }}</i> ({{ talk.date | date: "%B %d, %Y" }})
         </li>
