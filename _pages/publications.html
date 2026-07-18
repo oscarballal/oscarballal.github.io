@@ -6,18 +6,30 @@ author_profile: true
 mathjax: true
 ---
 <hr>
-
-<ol reversed>
+<ul style="list-style: none; margin: 0; padding: 0;">
 {% for post in site.publications reversed %}
-  <li style="margin-bottom: 15px;">
-    {{ post.citation }}
-    <a href="{{ post.paperurl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">[arXiv]</a>
-    {% if post.puburl %}
-      | <a href="{{ post.puburl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">[Journal]</a>
+  <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 15px;">
+    {% if post.pdf %}
+      <a href="/files/{{ post.pdf }}" target="_blank" rel="noopener noreferrer" title="Descargar PDF" aria-label="Descargar PDF" style="flex-shrink: 0; margin-top: 2px; border-bottom: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 2 H14 L19 7 V22 H5 Z" fill="#9E1B32"/>
+          <path d="M14 2 L19 7 H14 Z" fill="#ffffff" fill-opacity="0.3"/>
+          <text x="12" y="18" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="6.5" font-weight="bold" fill="#ffffff">PDF</text>
+        </svg>
+      </a>
+    {% else %}
+      <span style="flex-shrink: 0; width: 22px;"></span>
     {% endif %}
+    <span style="flex: 1; min-width: 0;">
+      {{ post.citation }}
+      <a href="{{ post.paperurl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">[arXiv]</a>
+      {% if post.puburl %}
+        | <a href="{{ post.puburl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">[Journal]</a>
+      {% endif %}
+    </span>
   </li>
 {% endfor %}
-</ol>
+</ul>
 
 <hr>
 
