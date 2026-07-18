@@ -19,9 +19,9 @@ mathjax: true
     <span style="flex: 1; min-width: 0;">
       {{ post.citation }}
       {% if post.puburl %}
-        DOI: <a href="{{ post.puburl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">{{ post.puburl | split: "doi.org/" | last }}</a> |
+      DOI:&nbsp;<a href="{{ post.puburl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">{{ post.puburl | split: "doi.org/" | last }}</a> |
       {% endif %}
-      arXiv: <a href="{{ post.paperurl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">{{ post.paperurl | split: "/abs/" | last }}</a>{% if post.arxivclass %} [{{ post.arxivclass }}]{% endif %}
+      arXiv:&nbsp;<a href="{{ post.paperurl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">{{ post.paperurl | split: "/abs/" | last }}</a>{% if post.arxivclass %}&nbsp;[{{ post.arxivclass }}]{% endif %}
     </span>
   </li>
 {% endfor %}
