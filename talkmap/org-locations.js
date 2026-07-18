@@ -1,22 +1,27 @@
 var addressPoints = [
   [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7879363,
-    -122.4075201
+    "Mixed superposition rules and compatible geometric structures<br />Gamma Seminar; Online",
+    43.5904719,
+    3.8595132
   ],
   [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536909,
-    -118.242766
+    "Lie systems and supergeometry<br />Geometry and Topology for the future IV; Madrid, Spain",
+    40.416782,
+    -3.703507
   ],
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.5074456,
-    -0.1277653
+    "Mixed superposition rules for Lie systems: compatible geometric structures and applications<br />XX International Young Researchers Workshop on Geometry, Dynamics and Field Theory; Loughborough, United Kingdom",
+    52.7723859,
+    -1.2077985
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
+    "Lie\u2019s Theorem for superposition rules revisited<br />XVIII International ICMAT Summer School on Geometry, Dynamics and Field theory; Miraflores de la Sierra, Madrid, Spain",
+    40.8137532,
+    -3.7667236
+  ],
+  [
+    "Lie Theorem for superposition rules for PDEs revisited<br />2nd International Workshop on Geometric Field Theory; Warsaw, Poland",
+    52.2319581,
+    21.0067249
   ]
 ];
