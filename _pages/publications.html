@@ -11,10 +11,12 @@ mathjax: true
   <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 15px;">
     {% if post.pdf %}
       <a href="/files/{{ post.pdf }}" target="_blank" rel="noopener noreferrer" title="Descargar PDF" aria-label="Descargar PDF" style="flex-shrink: 0; margin-top: 2px; border-bottom: none;">
-       <i class="fas fa-file-pdf" style="color:#9E1B32; font-size:18px;"></i>
+        <i class="fas fa-file-pdf" style="color:#9E1B32; font-size:18px;"></i>
       </a>
     {% else %}
-      <span style="flex: 1; min-width: 0;">
+      <span style="flex-shrink: 0; width: 22px;"></span>
+    {% endif %}
+    <span style="flex: 1; min-width: 0;">
       {{ post.citation }}
       {% if post.puburl %}
         DOI: <a href="{{ post.puburl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">{{ post.puburl | split: "doi.org/" | last }}</a> |
@@ -24,9 +26,7 @@ mathjax: true
   </li>
 {% endfor %}
 </ul>
-
 <hr>
-
 <h3>Collaborators</h3>
 <ul>
   <li><a href="https://www.ucm.es/imi/rutwig-campoamor-stursberg" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">Rutwig Campoamor-Stursberg</a> (UCM)</li>
@@ -35,9 +35,7 @@ mathjax: true
   <li>Adam Maskalaniec (UW)</li>
   <li>Tomasz Sobczak (UW)</li>
 </ul>
-
 <hr>
-
 <!-- MathJax Injection script to fix list parsing errors -->
 <script>
   window.MathJax = {
