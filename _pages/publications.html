@@ -14,14 +14,12 @@ mathjax: true
        <i class="fas fa-file-pdf" style="color:#9E1B32; font-size:18px;"></i>
       </a>
     {% else %}
-      <span style="flex-shrink: 0; width: 22px;"></span>
-    {% endif %}
-    <span style="flex: 1; min-width: 0;">
+      <span style="flex: 1; min-width: 0;">
       {{ post.citation }}
-      <a href="{{ post.paperurl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">[arXiv]</a>
       {% if post.puburl %}
-        | <a href="{{ post.puburl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">[Journal]</a>
+        DOI: <a href="{{ post.puburl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">{{ post.puburl | split: "doi.org/" | last }}</a> |
       {% endif %}
+      arXiv: <a href="{{ post.paperurl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">{{ post.paperurl | split: "/abs/" | last }}</a>{% if post.arxivclass %} [{{ post.arxivclass }}]{% endif %}
     </span>
   </li>
 {% endfor %}
