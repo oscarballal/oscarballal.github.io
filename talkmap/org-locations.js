@@ -21,7 +21,7 @@ var addressPoints = [
   ],
   [
     "Lie Theorem for superposition rules for PDEs revisited<br />2nd International Workshop on Geometric Field Theory; Warsaw, Poland",
-    52.2333742,
-    21.0711489
+    52.2319581,
+    21.0067249
   ]
 ];
