@@ -41,3 +41,15 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+/* Texto justificado, con guionado automático y sin desbordes en móvil */
+.page__content,
+.archive__item-excerpt,
+p,
+li {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
