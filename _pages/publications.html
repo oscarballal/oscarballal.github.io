@@ -13,25 +13,37 @@ mathjax: true
     box-shadow: 0 4px 10px rgba(0,0,0,0.12);
     transform: translateY(-2px);
   }
+  .pub-badge {
+    white-space: nowrap;
+  }
 </style>
 <hr>
 <ul style="list-style: none; margin: 0; padding: 0;">
 {% for post in site.publications reversed %}
-  <li class="pub-card" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px; padding: 16px 18px; border: 1px solid #e5e5e5; border-left: 4px solid #9E1B32; border-radius: 8px; background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+  <li class="pub-card" style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px; padding: 18px 20px; border: 1px solid #e5e5e5; border-left: 4px solid #9E1B32; border-radius: 10px; background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
     {% if post.pdf %}
-      <a href="/files/{{ post.pdf }}" target="_blank" rel="noopener noreferrer" title="Descargar PDF" aria-label="Descargar PDF" style="flex-shrink: 0; margin-top: 2px; border-bottom: none;">
-        <i class="fas fa-file-pdf" style="color:#9E1B32; font-size:18px;"></i>
+      <a href="/files/{{ post.pdf }}" target="_blank" rel="noopener noreferrer" title="Descargar PDF" aria-label="Descargar PDF" style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: rgba(158,27,50,0.09); display: flex; align-items: center; justify-content: center; border-bottom: none;">
+        <i class="fas fa-file-pdf" style="color:#9E1B32; font-size:17px;"></i>
       </a>
     {% else %}
-      <span style="flex-shrink: 0; width: 22px;"></span>
+      <span style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: #f2f2f2; display: block;"></span>
     {% endif %}
-    <span style="flex: 1; min-width: 0;">
-      {{ post.citation }}
+    <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px;">
+      <div>{{ post.citation }}</div>
+      <div>
+        <a href="{{ post.paperurl }}" class="pub-badge" style="display:inline-block; background:#9E1B32; color:#ffffff; font-size:13px; font-weight:600; padding:4px 12px; border-radius:14px; text-decoration:none; border-bottom:none;">arXiv: {{ post.paperurl | split: "/abs/" | last }}</a>
+      </div>
       {% if post.puburl %}
-        DOI:&nbsp;<a href="{{ post.puburl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">{{ post.puburl | split: "doi.org/" | last }}</a> |
+      <div>
+        <a href="{{ post.puburl }}" class="pub-badge" style="display:inline-block; background:#ffffff; color:#9E1B32; font-size:13px; font-weight:600; padding:3px 12px; border:1.5px solid #9E1B32; border-radius:14px; text-decoration:none; border-bottom:none;">doi: {{ post.puburl | split: "doi.org/" | last }}</a>
+      </div>
       {% endif %}
-      arXiv:&nbsp;<a href="{{ post.paperurl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">{{ post.paperurl | split: "/abs/" | last }}</a>{% if post.arxivclass %}&nbsp;[{{ post.arxivclass }}]{% endif %}
-    </span>
+      {% if post.arxivclass %}
+      <div>
+        <span class="pub-badge" style="display:inline-block; background:rgba(158,27,50,0.09); color:#9E1B32; font-size:12px; font-weight:600; padding:3px 11px; border-radius:14px;">{{ post.arxivclass }}</span>
+      </div>
+      {% endif %}
+    </div>
   </li>
 {% endfor %}
 </ul>
