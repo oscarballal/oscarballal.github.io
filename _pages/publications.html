@@ -28,21 +28,22 @@ mathjax: true
     {% else %}
       <span style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: #f2f2f2; display: block;"></span>
     {% endif %}
-    <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px;">
-      <div>{{ post.citation }}</div>
+    <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 7px;">
+      <div style="font-weight: 700; font-size: 17px; color: #1a1a1a; line-height: 1.3;">{{ post.title }}</div>
+      <div style="color: #6b7280; font-size: 14px;">{{ post.authors }}</div>
       <div>
-        <a href="{{ post.paperurl }}" class="pub-badge" style="display:inline-block; background:#9E1B32; color:#ffffff; font-size:13px; font-weight:600; padding:4px 12px; border-radius:14px; text-decoration:none; border-bottom:none;">arXiv: {{ post.paperurl | split: "/abs/" | last }}</a>
+        {% if post.venue %}
+          <span style="font-style: italic; color: #444444; font-size: 14px;">{{ post.venue }}</span>
+        {% else %}
+          <span class="pub-badge" style="display:inline-block; background:rgba(158,27,50,0.09); color:#9E1B32; font-size:12px; font-weight:700; padding:3px 11px; border-radius:14px;">Preprint</span>
+        {% endif %}
       </div>
-      {% if post.puburl %}
       <div>
-        <a href="{{ post.puburl }}" class="pub-badge" style="display:inline-block; background:#ffffff; color:#9E1B32; font-size:13px; font-weight:600; padding:3px 12px; border:1.5px solid #9E1B32; border-radius:14px; text-decoration:none; border-bottom:none;">doi: {{ post.puburl | split: "doi.org/" | last }}</a>
+        <a href="{{ post.paperurl }}" class="pub-badge" style="display:inline-block; background:#9E1B32; color:#ffffff; font-size:13px; font-weight:600; padding:4px 12px; border-radius:14px; text-decoration:none; border-bottom:none; margin-right:6px;">arXiv:&nbsp;{{ post.paperurl | split: "/abs/" | last }}{% if post.arxivclass %}&nbsp;[{{ post.arxivclass }}]{% endif %}</a>
+        {% if post.puburl %}
+          <a href="{{ post.puburl }}" class="pub-badge" style="display:inline-block; background:#ffffff; color:#9E1B32; font-size:13px; font-weight:600; padding:3px 12px; border:1.5px solid #9E1B32; border-radius:14px; text-decoration:none; border-bottom:none;">doi:&nbsp;{{ post.puburl | split: "doi.org/" | last }}</a>
+        {% endif %}
       </div>
-      {% endif %}
-      {% if post.arxivclass %}
-      <div>
-        <span class="pub-badge" style="display:inline-block; background:rgba(158,27,50,0.09); color:#9E1B32; font-size:12px; font-weight:600; padding:3px 11px; border-radius:14px;">{{ post.arxivclass }}</span>
-      </div>
-      {% endif %}
     </div>
   </li>
 {% endfor %}
