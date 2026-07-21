@@ -20,10 +20,10 @@ mathjax: true
 <hr>
 <ul style="list-style: none; margin: 0; padding: 0;">
 {% for post in site.publications reversed %}
-  <li class="pub-card" style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px; padding: 18px 20px; border: 1px solid #e5e5e5; border-left: 4px solid #9E1B32; border-radius: 10px; background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
+  <li class="pub-card" style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px; padding: 18px 20px; border: 1px solid #e5e5e5; border-left: 4px solid #8C6D17; border-radius: 10px; background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
     {% if post.pdf %}
-      <a href="/files/{{ post.pdf }}" target="_blank" rel="noopener noreferrer" title="Descargar PDF" aria-label="Descargar PDF" style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: rgba(158,27,50,0.09); display: flex; align-items: center; justify-content: center; border-bottom: none;">
-        <i class="fas fa-file-pdf" style="color:#9E1B32; font-size:17px;"></i>
+      <a href="/files/{{ post.pdf }}" target="_blank" rel="noopener noreferrer" title="Descargar PDF" aria-label="Descargar PDF" style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: rgba(140,109,23,0.09); display: flex; align-items: center; justify-content: center; border-bottom: none;">
+        <i class="fas fa-file-pdf" style="color:#8C6D17; font-size:17px;"></i>
       </a>
     {% else %}
       <span style="flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: #f2f2f2; display: block;"></span>
@@ -35,13 +35,13 @@ mathjax: true
         {% if post.venue %}
           <span style="font-style: italic; color: #444444; font-size: 14px;">{{ post.venue }}</span>
         {% else %}
-          <span class="pub-badge" style="display:inline-block; background:rgba(158,27,50,0.09); color:#9E1B32; font-size:12px; font-weight:700; padding:3px 11px; border-radius:14px;">Preprint</span>
+          <span class="pub-badge" style="display:inline-block; background:rgba(140,109,23,0.09); color:#8C6D17; font-size:12px; font-weight:700; padding:3px 11px; border-radius:14px;">Preprint</span>
         {% endif %}
       </div>
       <div>
-        <a href="{{ post.paperurl }}" class="pub-badge" style="display:inline-block; background:#9E1B32; color:#ffffff; font-size:13px; font-weight:600; padding:4px 12px; border-radius:14px; text-decoration:none; border-bottom:none; margin-right:6px;">arXiv:&nbsp;{{ post.paperurl | split: "/abs/" | last }}{% if post.arxivclass %}&nbsp;[{{ post.arxivclass }}]{% endif %}</a>
+        <a href="{{ post.paperurl }}" class="pub-badge" style="display:inline-block; background:#8C6D17; color:#ffffff; font-size:13px; font-weight:600; padding:4px 12px; border-radius:14px; text-decoration:none; border-bottom:none; margin-right:6px;">arXiv:&nbsp;{{ post.paperurl | split: "/abs/" | last }}{% if post.arxivclass %}&nbsp;[{{ post.arxivclass }}]{% endif %}</a>
         {% if post.puburl %}
-          <a href="{{ post.puburl }}" class="pub-badge" style="display:inline-block; background:#ffffff; color:#9E1B32; font-size:13px; font-weight:600; padding:3px 12px; border:1.5px solid #9E1B32; border-radius:14px; text-decoration:none; border-bottom:none;">doi:&nbsp;{{ post.puburl | split: "doi.org/" | last }}</a>
+          <a href="{{ post.puburl }}" class="pub-badge" style="display:inline-block; background:#ffffff; color:#8C6D17; font-size:13px; font-weight:600; padding:3px 12px; border:1.5px solid #8C6D17; border-radius:14px; text-decoration:none;">doi:&nbsp;{{ post.puburl | split: "doi.org/" | last }}</a>
         {% endif %}
       </div>
     </div>
@@ -51,9 +51,9 @@ mathjax: true
 <hr>
 <h3>Collaborators</h3>
 <ul>
-  <li><a href="https://www.ucm.es/imi/rutwig-campoamor-stursberg" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">Rutwig Campoamor-Stursberg</a> (UCM)</li>
-  <li><a href="https://investigacion.ubu.es/investigadores/35246/detalle" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">Francisco José Herranz</a> (UBU)</li>
-  <li><a href="https://www.fuw.edu.pl/~delucas/" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">Javier de Lucas</a> (UW)</li>
+  <li><a href="https://www.ucm.es/imi/rutwig-campoamor-stursberg" style="color: #8C6D17; text-decoration: underline; border-bottom: none;">Rutwig Campoamor-Stursberg</a> (UCM)</li>
+  <li><a href="https://investigacion.ubu.es/investigadores/35246/detalle" style="color: #8C6D17; text-decoration: underline; border-bottom: none;">Francisco José Herranz</a> (UBU)</li>
+  <li><a href="https://www.fuw.edu.pl/~delucas/" style="color: #8C6D17; text-decoration: underline; border-bottom: none;">Javier de Lucas</a> (UW)</li>
   <li>Adam Maskalaniec (UW)</li>
   <li>Tomasz Sobczak (UW)</li>
 </ul>
