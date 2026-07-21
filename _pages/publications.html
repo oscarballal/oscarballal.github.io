@@ -5,10 +5,19 @@ permalink: /publications/
 author_profile: true
 mathjax: true
 ---
+<style>
+  .pub-card {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .pub-card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+  }
+</style>
 <hr>
 <ul style="list-style: none; margin: 0; padding: 0;">
 {% for post in site.publications reversed %}
-  <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 15px;">
+  <li class="pub-card" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px; padding: 16px 18px; border: 1px solid #e5e5e5; border-left: 4px solid #9E1B32; border-radius: 8px; background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.08);">
     {% if post.pdf %}
       <a href="/files/{{ post.pdf }}" target="_blank" rel="noopener noreferrer" title="Descargar PDF" aria-label="Descargar PDF" style="flex-shrink: 0; margin-top: 2px; border-bottom: none;">
         <i class="fas fa-file-pdf" style="color:#9E1B32; font-size:18px;"></i>
@@ -19,7 +28,7 @@ mathjax: true
     <span style="flex: 1; min-width: 0;">
       {{ post.citation }}
       {% if post.puburl %}
-      DOI:&nbsp;<a href="{{ post.puburl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">{{ post.puburl | split: "doi.org/" | last }}</a> |
+        DOI:&nbsp;<a href="{{ post.puburl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">{{ post.puburl | split: "doi.org/" | last }}</a> |
       {% endif %}
       arXiv:&nbsp;<a href="{{ post.paperurl }}" style="color: #9E1B32; text-decoration: underline; border-bottom: none;">{{ post.paperurl | split: "/abs/" | last }}</a>{% if post.arxivclass %}&nbsp;[{{ post.arxivclass }}]{% endif %}
     </span>
