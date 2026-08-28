@@ -15,6 +15,11 @@ var addressPoints = [
     -3.7667236
   ],
   [
+    "Curvature-dependent reductions of contact Lie systems on curved spaces<br />XIX Young Researchers Workshop in Geometry Dynamics and Field Theory; Verona, Italy",
+    45.4424977,
+    10.9857377
+  ],
+  [
     "Lie systems and supergeometry<br />Geometry and Topology for the future IV; Madrid, Spain",
     40.416782,
     -3.703507
