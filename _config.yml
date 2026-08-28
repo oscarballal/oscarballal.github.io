@@ -32,6 +32,18 @@ publication_category:
   conferences:
     title: 'Conference Papers'
 
+    collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+    sort_by: date
+  talks:
+    output: true
+    permalink: /:collection/:path/
+
 # Site Settings
 breadcrumbs              : false
 words_per_minute         : 160
