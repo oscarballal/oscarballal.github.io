@@ -41,18 +41,6 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
-/* Quitar el límite de ancho en pantallas grandes */
-#main {
-  max-width: 100% !important;
-}
-/* Quitar el margen derecho reservado del bloque de contenido */
-.page {
-  @media (min-width: 992px) {
-    margin-right: 0 !important;
-    width: auto !important;
-    overflow: hidden !important;
-  }
-}
 /* Texto justificado, con guionado automático y sin desbordes en móvil */
 .page__content,
 .archive__item-excerpt,
