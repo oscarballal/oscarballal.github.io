@@ -5,6 +5,16 @@ var addressPoints = [
     -1.2077985
   ],
   [
+    "Contact Lie systems on three-dimensional Riemannian and Lorentzian spaces of constant curvature<br />RSME's 7th Congress of Young Researchers; Bilbao, Spain",
+    43.2630018,
+    -2.9350039
+  ],
+  [
+    "New Lie\u2013Hamilton systems on Riemannian and Lorentzian spaces from conformal transformations and applications<br />XXV Winter Meeting on Geometry, Dynamics and Field Theory; Zaragoza, Spain",
+    41.6915847,
+    -0.9101268
+  ],
+  [
     "Lie Theorem for superposition rules for PDEs revisited<br />2nd International Workshop on Geometric Field Theory; Warsaw, Poland",
     52.2333742,
     21.0711489
