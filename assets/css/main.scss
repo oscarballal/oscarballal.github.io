@@ -41,6 +41,10 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+/* Quitar el límite de ancho en pantallas grandes */
+#main {
+  max-width: 100% !important;
+}
 /* Texto justificado, con guionado automático y sin desbordes en móvil */
 .page__content,
 .archive__item-excerpt,
