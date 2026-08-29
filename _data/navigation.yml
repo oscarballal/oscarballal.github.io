@@ -17,10 +17,12 @@ main:
   - title: "Teaching"
     url: /teaching/    
     
+  - title: "Reading groupoid"
+    url: https://readinggroupoid.org/index.html
     
-  - title: "CV"
-    url: /cv/
-    
+  # - title: "CV"
+  #   url: /cv/
+
   # - title: "CV"
   #   url: /cv-json/
     
