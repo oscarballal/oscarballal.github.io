@@ -5,8 +5,34 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<h2 style="font-weight: 700; font-size: 1.3em;">Current Teaching</h2>
+<ul style="margin-bottom: 1.5em;">
+  {% assign current_courses = site.teaching | where: "current", true %}
+  {% for course in current_courses %}
+    <li style="margin-bottom: 0.5em;">
+      <strong>{{ course.semester }} semester ({{ course.academic_year }})</strong>.
+      <a href="{{ course.suburl }}" style="color: #8C6D17; text-decoration: none; border-bottom: none;">{{ course.subject }}</a>.
+      {{ course.degree_year }}. {{ course.university }}.
+    </li>
+  {% endfor %}
+</ul>
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+<h2 style="font-weight: 700; font-size: 1.3em;">Former Teaching</h2>
+{% assign former_courses = site.teaching | where: "current", false %}
+{% assign years = former_courses | group_by: "academic_year" | sort: "name" | reverse %}
+{% for year in years %}
+  <details>
+    <summary style="font-size: 1.1em; font-weight: bold; cursor: pointer; margin-bottom: 0.5em; padding: 0.2em;">
+      {{ year.name }}
+    </summary>
+    <ul style="margin-top: 0.5em; margin-bottom: 1.5em;">
+      {% for course in year.items %}
+        <li style="margin-bottom: 0.5em;">
+          <strong>{{ course.semester }} semester ({{ course.academic_year }})</strong>.
+          <a href="{{ course.suburl }}" style="color: #8C6D17; text-decoration: none; border-bottom: none;">{{ course.subject }}</a>.
+          {{ course.degree_year }}. {{ course.university }}.
+        </li>
+      {% endfor %}
+    </ul>
+  </details>
 {% endfor %}
