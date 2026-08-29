@@ -10,7 +10,7 @@ author_profile: true
   {% assign current_courses = site.teaching | where: "current", true %}
   {% for course in current_courses %}
     <li style="margin-bottom: 0.5em;">
-      <strong>{{ course.semester }} semester ({{ course.academic_year }})</strong>.
+     <strong>{{ course.semester }}</strong> ({{ course.academic_year }}).
       <a href="{{ course.suburl }}" style="color: #8C6D17; text-decoration: none; border-bottom: none;">{{ course.subject }}</a>.
       {{ course.degree_year }}. {{ course.university }}.
     </li>
@@ -28,7 +28,7 @@ author_profile: true
     <ul style="margin-top: 0.5em; margin-bottom: 1.5em;">
       {% for course in year.items %}
         <li style="margin-bottom: 0.5em;">
-          <strong>{{ course.semester }} semester ({{ course.academic_year }})</strong>.
+         <strong>{{ course.semester }}</strong> ({{ course.academic_year }}).
           <a href="{{ course.suburl }}" style="color: #8C6D17; text-decoration: none; border-bottom: none;">{{ course.subject }}</a>.
           {{ course.degree_year }}. {{ course.university }}.
         </li>
