@@ -15,25 +15,7 @@ author_profile: true
     <ul style="margin-top: 0.5em; margin-bottom: 1.5em;">
       {% assign sorted_talks = year.items | sort: "date" | reverse %}
       {% for talk in sorted_talks %}
-        <li style="margin-bottom: 0.5em;">
-          {% if talk.eventurl %}
-            <strong><a href="{{ talk.eventurl }}">{{ talk.venue }}</a></strong>
-          {% else %}
-            <strong>{{ talk.venue }}</strong>
-          {% endif %}.
-          
-          {{ talk.date | date: "%B %d, %Y" }}. 
-          
-          <i>{{ talk.title }}</i>.
-          
-          {% if talk.slidesurl %}
-            [<a href="{{ talk.slidesurl }}">slides</a>]
-          {% endif %}
-          
-          {% if talk.videourl %}
-            [<a href="{{ talk.videourl }}">video</a>]
-          {% endif %}
-        </li>
+        <li style="margin-bottom: 0.5em;">{% if talk.eventurl %}<strong><a href="{{ talk.eventurl }}" style="color: #8C6D17; text-decoration: none; border-bottom: none;">{{ talk.venue }}</a></strong>{% else %}<strong>{{ talk.venue }}</strong>{% endif %}. {{ talk.date | date: "%B %d, %Y" }}. <i>{{ talk.title }}</i>.{% if talk.location %} {{ talk.location }}.{% endif %}{% if talk.slidesurl %} <a href="{{ talk.slidesurl }}" target="_blank" rel="noopener noreferrer" title="Diapositivas" aria-label="Diapositivas" style="color: #8C6D17; text-decoration: none; border-bottom: none;"><i class="fas fa-file-pdf" style="font-size: 15px;"></i></a>{% endif %}{% if talk.videourl %} <a href="{{ talk.videourl }}" target="_blank" rel="noopener noreferrer" title="Vídeo" aria-label="Vídeo" style="color: #8C6D17; text-decoration: none; border-bottom: none;"><i class="fas fa-video" style="font-size: 15px;"></i></a>{% endif %}</li>
       {% endfor %}
     </ul>
   </details>
