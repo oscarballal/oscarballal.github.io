@@ -4,6 +4,13 @@ title: "Talks and Presentations"
 permalink: /talks/
 author_profile: true
 ---
+<style>
+  @media (max-width: 924px) {
+    .sidebar {
+      display: none !important;
+    }
+  }
+</style>
 <p>Below you can see some of the talks and seminars I have given over the years, organised by year.</p>
 {% assign talks_by_year = site.talks | group_by_exp: "talk", "talk.date | date: '%Y'" | sort: "name" | reverse %}
 
