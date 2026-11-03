@@ -1,5 +1,5 @@
 ---
-title: "Projective relativistic dynamics from a quantum Lorentz algebra: <span style="white-space: nowrap;">time-dependent</span> deformed Hamiltonians on <span style="white-space: nowrap;">(anti-)de</span> Sitter spaces"
+title: 'Projective relativistic dynamics from a quantum Lorentz algebra: <span style="white-space: nowrap;">time-dependent</span> deformed Hamiltonians on <span style="white-space: nowrap;">(anti-)de</span> Sitter spaces'
 collection: publications
 date: 2026-11-03
 authors: 'R. Campoamor-Stursberg, O. Carballal and F. J. Herranz'
